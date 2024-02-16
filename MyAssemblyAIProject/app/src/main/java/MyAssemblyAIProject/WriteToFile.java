@@ -11,12 +11,10 @@ public class WriteToFile {
         String directoryPath = "src/main/resources/";
         String filePath = directoryPath + fileName;
 
-        // Ensure the "resources" directory exists
         File directory = new File(directoryPath);
         if (!directory.exists()) {
-            directory.mkdirs(); // Create the directory if it doesn't exist
+            directory.mkdirs();
         }
-
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(result);
             System.out.println("Transcription has been written to: " + filePath);
