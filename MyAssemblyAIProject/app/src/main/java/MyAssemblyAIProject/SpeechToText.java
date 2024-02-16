@@ -6,8 +6,8 @@ import com.assemblyai.api.resources.transcripts.types.TranscriptOptionalParams;
 
 public class SpeechToText {
     public static void main(String[] args) {
-        AssemblyAI aai = AssemblyAI.builder().apiKey("<YOUR_API_KEY>").build();
-        String url = "<AUDIO_URL>";
+        AssemblyAI aai = AssemblyAI.builder().apiKey("a3775415656b4412913a152a115c400f").build();
+        String url = "https://audio.jukehost.co.uk/gtwfk3cTauFRdoSSf37pdFHTnHxzYQP5";
         var params = TranscriptOptionalParams.builder()
                 .speakerLabels(true)
                 .build();

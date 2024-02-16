@@ -39,7 +39,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'nlp.TokenizeExample'
+    mainClass = 'nlp.SentimentAnalysis'
 }
 
 tasks.named('test') {
