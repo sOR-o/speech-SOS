@@ -8,8 +8,6 @@ class SignLanguageTranslator:
         self.queue_size = 15
         self.broken_correct_queue = []
 
-
-
     @staticmethod 
     def data():
         return  {
@@ -123,6 +121,8 @@ Sentence: I need backup, the suspect is armed and dangerous!
 Sentiment: Urgency (Authorities: Police, Ambulance)
 Sentence: We have to get out of here, the building is collapsing!
 Sentiment: Fear (Authorities: Fire Brigade, Ambulance)
+Sentence: I feel like commiting suicide.
+Sentiment: Negativity and Fear (Authorities: Police, Ambulance, Mental Health Professional)
 Sentence: Stay low, the shooter is still in the building.
 Sentiment: Alert (Authorities: Police, Ambulance)
 Sentence: The puppy chewed up my favorite shoes, now I'm devastated.
@@ -130,7 +130,6 @@ Sentiment: Sadness (Authorities: None)'''
 
 translator = SignLanguageTranslator(text)
 
-for i in range(2):
-    input_sentence = input("Enter : ")
-    translator.translate(input_sentence)
-print(translator.text)
+
+input_sentence = input("Enter : ")
+translator.translate(input_sentence)
