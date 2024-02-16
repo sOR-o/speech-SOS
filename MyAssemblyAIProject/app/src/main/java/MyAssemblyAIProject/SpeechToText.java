@@ -7,7 +7,7 @@ import com.assemblyai.api.resources.transcripts.types.TranscriptOptionalParams;
 public class SpeechToText {
     public static void main(String[] args) {
         AssemblyAI aai = AssemblyAI.builder().apiKey("a3775415656b4412913a152a115c400f").build();
-        String url = "https://audio.jukehost.co.uk/gtwfk3cTauFRdoSSf37pdFHTnHxzYQP5";
+        String url = "https://audio.jukehost.co.uk/ZXgAM97jxHlB0bIeCc1DxqmZTDbCb4Ps";
         var params = TranscriptOptionalParams.builder()
                 .speakerLabels(true)
                 .build();
@@ -29,5 +29,12 @@ public class SpeechToText {
         String result = fullTranscription.toString();
         WriteToFile obj = new WriteToFile();
         obj.write(result);
+
+
+        SentenceRecognizer obj3 = new SentenceRecognizer();
+        obj3.sentenceExtractor();
+
+        EmergencySOSExtractor obj2 = new EmergencySOSExtractor();
+        obj2.extracted_lines();
     }
 }
