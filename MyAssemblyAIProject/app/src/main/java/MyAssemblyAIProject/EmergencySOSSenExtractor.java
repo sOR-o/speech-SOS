@@ -11,8 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class EmergencySOSExtractor {
-
+public class EmergencySOSSenExtractor {
     void extracted_lines() {
         try {
             extractEmergencySentences("src/main/resources/Extracted_Sentences.txt", "src/main/resources/harmful_sentences.txt");

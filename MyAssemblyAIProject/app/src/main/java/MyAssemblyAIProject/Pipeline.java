@@ -11,7 +11,6 @@ public class Pipeline {
     
     private Pipeline() {
     }
-
     static {
         properties = new Properties();
         properties.setProperty("annotators", propertiesName);
